@@ -30,7 +30,7 @@ class Form(QMainWindow):
             tema = str(self.tema.text())
             sms = str(self.sms.text())
             cur  = connect.cursor()
-            # cur.execute(f"INSERT INTO users VALUES ('{komu}', {tema}, {sms});")
+            cur.execute(f"INSERT INTO users VALUES ('{komu}', {tema}, {sms});")
             connect.commit()
             
             
